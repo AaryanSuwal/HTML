@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="registration-form">
+            <fieldset>
+                <legend class="legend">Registration Form</legend>
+                
+                <!-- Name Section -->
+                <div class="grid-layout">
+                    <div class="input-group">
+                        <input type="text" id="firstname" name="firstname" class="input-field" placeholder=" " required>
+                        <label for="firstname" class="input-label">First name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="lastname" name="lastname" class="input-field" placeholder=" " required>
+                        <label for="lastname" class="input-label">Last name</label>
+                    </div>
+                    
+                </div>
+
+                <!-- Date of Birth Section -->
+                <div class="input-group">
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" id="date" name="dob" min="1925-01-01" max="2025-04-21">
+                </div>
+                
+                <!-- Password Section -->
+                <div class="grid-layout">
+                    <div class="input-group">
+                        <input type="password" name="password" id="password" class="input-field" placeholder=" " minlength="8" maxlength="16" title="Must be 8-16 characters long" required>
+                        <label for="password" class="input-label">Enter password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="confirmpassword" id="cpassword" class="input-field" placeholder=" " minlength="8" maxlength="16" title="Must be 8-16 characters long" required>
+                        <label for="cpassword" class="input-label">Confirm password</label>
+                    </div>
+                </div>
+
+                <!-- Phone Section -->
+                <div class="input-group">
+                    <input type="tel" id="number" name="number" class="input-field" placeholder=" " pattern="[+0-9\- ]+$" minlength="10" maxlength="15" required>
+                    <label for="number" class="input-label">Enter phone number</label>
+                </div>
+                    
+                
+                <!-- Email Section -->
+                <div class="input-group">
+                    <input type="email" id="email" name="email"class="input-field" placeholder=" " required>
+                    <label for="email" class="input-label">Email:</label>
+                </div>
+                
+                <!-- Gender Section -->
+               <div>
+                   <label class="">Gender:</label><br>
+                       <div class="radio-group">
+                           <input type="radio" id="male" name="gender" value="Male">
+                           <label for="male">Male</label>
+
+                           <input type="radio" id="female" name="gender" value="Female">
+                           <label for="female">Female</label>
+
+                           <input type="radio" id="other" name="gender" value="Other">
+                           <label for="other">Other</label>
+                       </div>
+                </div><br>
+
+                <!-- Hobbies Section -->
+                <div class="">
+                    <label>Hobbies:</label><br>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="reading" name="Hobbies" value="Reading">
+                            <label for="reading">Reading</label>
+
+                            <input type="checkbox" id="sports" name="Hobbies" value="Sports">
+                            <label for="sports">Sports</label>
+
+                            <input type="checkbox" id="coding" name="Hobbies" value="Coding">
+                            <label for="coding">Coding</label>
+
+                            <input type="checkbox" id="music" name="Hobbies" value="Music">
+                            <label for="music">Music</label>
+                        </div>
+                </div><br>
+
+                <!-- Range Section -->
+                <div class="input-group">
+                  <label for="range">Range:</label>
+                  <input type="range" id="range" name="range" min="0" max="100" step="1">
+                </div>
+
+                <!-- URL Section -->
+                <div class="input-group">
+                    <input type="url" id="url" name="url" class="input-field" placeholder=" ">
+                    <label for="url" class="input-label">URL:</label>
+                </div>
+
+               <!-- Time Section -->
+                <div class="input-group">
+                   <label for="time">Time:</label>
+                   <input type="time" id="time" name="time">
+               </div>
+
+                <!-- File Section -->
+                <div class="input-group">
+                    <label for="file">File:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+
+                <!-- Color Section -->
+                <div class="input-group">
+                    <label for="color">Color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+
+                <!-- Submit and Reset Section -->
+                <div>
+                    <input type="submit" value="Submit" class="button">
+                    <input type="reset" value="Reset" class="button">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
