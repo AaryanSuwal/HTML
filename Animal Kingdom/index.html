@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Animal Kingdom</h1>
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#classes" onclick="closeMenu()">Classes</a>
+            <a href="Photos.html" onclick="closeMenu()">Photos</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="hero" id="home">
+            <h2>Welcome to the Animal Kingdom</h2>
+            <p>Explore the fascinating world of animals and discover the incredible diversity of life on Earth.</p>
+        </div>
+
+        <div class="info" id="about">
+            <h3>About the Animal Kingdom</h3>
+            <div class="info-content">
+                <div class="info-text">
+                    <p>The animal kingdom represents one of the most diverse and fascinating groups of living organisms on Earth. Animals have evolved over millions of years, developing unique adaptations and characteristics that allow them to thrive in various environments.</p><br>
+                    <p>Animals come in an astonishing variety of forms, from tiny insects to the largest mammals, and they can be found in nearly every environment on Earth. From the smallest insects to the largest mammals, each species plays a crucial role in maintaining the balance of our planet's ecosystems. They are typically motile (can move) and heterotrophic (rely on other organisms for food).</p>
+                </div>
+                <img src="group.webp" alt="Animal Kingdom Diversity" class="info-image">
+                <div class="info-sections">
+                    <h3>Some characteristics are:</h3>
+                    <ul>
+                        <li>Multicellular</li>
+                        <li>Movement</li>
+                        <li>Reproduction</li>
+                        <li>Nervous System</li>
+                        <li>Heterotrophic</li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+
+        <div class="classes" id="classes">
+            <h3>Animal Classes</h3>
+            <div class="class-grid">
+                <a href="mammals.html" class="class-card">
+                    <img src="panda.jpg" alt="Panda">
+                    <h4>Mammals</h4>
+                </a>
+                <a href="reptiles.html" class="class-card">
+                    <img src="snake.jpg" alt="Snake">
+                    <h4>Reptiles</h4>
+                </a>
+                <a href="aves.html" class="class-card">
+                    <img src="eagle.jpg" alt="Eagle">
+                    <h4>Aves</h4>
+                </a>
+                <a href="amphibians.html" class="class-card">
+                    <img src="frog.jpg" alt="Frog">
+                    <h4>Amphibians</h4>
+                </a>
+                <a href="insects.html" class="class-card">
+                    <img src="butterfly.jpg" alt="Butterfly">
+                    <h4>Insects</h4>
+                </a>
+                <a href="aquatic.html" class="class-card">
+                    <img src="fish.jpg" alt="Clown Fish">
+                    <h4>Aquatic</h4>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Animal Kingdom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

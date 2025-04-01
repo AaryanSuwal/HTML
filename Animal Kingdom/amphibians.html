@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals - Animal Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-title">Animal Kingdom</a>
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about" onclick="closeMenu()">About</a>
+            <a href="index.html#classes" onclick="closeMenu()">Classes</a>
+            <a href="photos.html" onclick="closeMenu()">Photos</a>
+        </div>
+    </nav>
+    
+    <main class="detail-page">
+        <h2>Amphibians</h2>
+        
+        <div class="detail-content">
+            <img src="frog.jpg" alt="Frog" class="feature-image">
+            
+            <div class="info-section">
+                <h3>About Amphibians</h3>
+                <p>Amphibians are cold-blooded vertebrates that typically live both in water and on land at different stages of their life. They have moist, permeable skin that helps with gas exchange and can absorb water. They breathe through their skin and lungs, and their eggs do not have a hard shell, requiring a moist environment for reproduction.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Cold-blooded (Ectothermic)</li>
+                    <li>Lays eggs with soft sell</li>
+                    <li>Dual life cycle</li>
+                    <li>Lungs and skin for breathing</li>
+                    <li>Regenerative abilities</li>
+                    <li>Three-chambered heart</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="aves.html" class="nav-button">← Previous: Aves</a>
+            <a href="insects.html" class="nav-button">Next: Insects →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Animal Kingdom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

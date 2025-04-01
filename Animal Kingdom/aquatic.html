@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals - Animal Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-title">Animal Kingdom</a>
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about" onclick="closeMenu()">About</a>
+            <a href="index.html#classes" onclick="closeMenu()">Classes</a>
+            <a href="photos.html" onclick="closeMenu()">Photos</a>
+        </div>
+    </nav>
+    
+    <main class="detail-page">
+        <h2>Aquatic</h2>
+        
+        <div class="detail-content">
+            <img src="fish.jpg" alt="Clown Fish" class="feature-image">
+            
+            <div class="info-section">
+                <h3>About Aquatic</h3>
+                <p>Aquatic animals are those that live in water for most or all of their lives. They can be found in both marine (saltwater) and freshwater environments. Aquatic animals are adapted to life in water, with features like gills for breathing, streamlined bodies for efficient movement, and specialized appendages for swimming. Aquatic animals rely on water for oxygen, food, and reproduction.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Cold-blooded (Ectothermic)</li>
+                    <li>Gills of specialized breathing structure</li>
+                    <li>Fins or flippers</li>
+                    <li>Moist skin</li>
+                    <li>Sensory adaptations</li>
+                    <li>Adaptations to buoyancy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="amphibians.html" class="nav-button">← Previous: Amphibians</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Animal Kingdom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

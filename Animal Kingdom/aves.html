@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals - Animal Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-title">Animal Kingdom</a>
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about" onclick="closeMenu()">About</a>
+            <a href="index.html#classes" onclick="closeMenu()">Classes</a>
+            <a href="photos.html" onclick="closeMenu()">Photos</a>
+        </div>
+    </nav>
+    
+    <main class="detail-page">
+        <h2>Aves</h2>
+        
+        <div class="detail-content">
+            <img src="eagle.jpg" alt="Eagle" class="feature-image">
+            
+            <div class="info-section">
+                <h3>About Aves</h3>
+                <p>Aves, or birds, are warm-blooded vertebrates known for their feathers, beaks, and the ability to lay eggs. They have lightweight skeletons to aid flight (though not all birds fly) and are characterized by wings, though some species have lost the ability to fly entirely. Birds are also equipped with a high metabolic rate and a four-chambered heart for efficient oxygen delivery.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Warm-blooded (Endothermic)</li>
+                    <li>Lays rggs</li>
+                    <li>feathers</li>
+                    <li>Beak</li>
+                    <li>Lightweight skeleton</li>
+                    <li>Lungs and air sack</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="reptiles.html" class="nav-button">← Previous: Reptiles</a>
+            <a href="amphibians.html" class="nav-button">Next: Amphibians →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Animal Kingdom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

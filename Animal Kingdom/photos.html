@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals - Animal Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-title">Animal Kingdom</a>
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about" onclick="closeMenu()">About</a>
+            <a href="index.html#classes" onclick="closeMenu()">Classes</a>
+            <a href="photos.html" onclick="closeMenu()">Photos</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="classes" id="classes">
+            <h3>Animals Photos</h3>
+            <div class="class-grid">
+                <div class="class-card">
+                    <img src="bear.jpg" alt="Bear">
+                    <div class="animal-name">Bear</div>
+                </div>
+                <div class="class-card">
+                    <img src="snake.jpg" alt="Snake">
+                    <div class="animal-name">Snake</div>
+                </div>
+                <div class="class-card">
+                    <img src="eagle.jpg" alt="Eagle">
+                    <div class="animal-name">Eagle</div>
+                </div>
+                <div class="class-card">
+                    <img src="frog.jpg" alt="Frog">
+                    <div class="animal-name">Frog</div>
+                </div>
+                <div class="class-card">
+                    <img src="lizard.jpg" alt="Lizard">
+                    <div class="animal-name">Lizard</div>
+                </div>
+                <div class="class-card">
+                    <img src="fish.jpg" alt="Clown Fish">
+                    <div class="animal-name">Clown Fish</div>
+                </div>
+                <div class="class-card">
+                    <img src="butterfly.jpg" alt="Butterfly">
+                    <div class="animal-name">Butterfly</div>
+                </div>
+                <div class="class-card">
+                    <img src="bird.jpg" alt="Bird">
+                    <div class="animal-name">Blue Bird</div>
+                </div>
+                <div class="class-card">
+                    <img src="lion.jpg" alt="Lion">
+                    <div class="animal-name">Lion</div>
+                </div>
+                <div class="class-card">
+                    <img src="jaguar.jpg" alt="Jaguar">
+                    <div class="animal-name">Jaguar</div>
+                </div>
+                <div class="class-card">
+                    <img src="elephant.jpg" alt="Elephant">
+                    <div class="animal-name">Elephant</div>
+                </div>
+                <div class="class-card">
+                    <img src="whale.jpg" alt="whale">
+                    <div class="animal-name">Whale</div>
+                </div>
+                <div class="class-card">
+                    <img src="deer.jpg" alt="Deer">
+                    <div class="animal-name">Deer</div>
+                </div>
+                <div class="class-card">
+                    <img src="panda.jpg" alt="Panda">
+                    <div class="animal-name">Panda</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Animal Kingdom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
